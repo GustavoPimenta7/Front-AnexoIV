@@ -1,0 +1,109 @@
+.formulario3{
+    margin-top: 2% ;
+    padding-bottom: 5.5%;
+    padding: 18px;
+    width: 400px;
+    height: 435px;
+    border: 2px solid #ffffff
+    
+  }
+
+
+  .LabelRepo{
+    color:white;
+  }
+
+  .FilterPlan{
+    background-color: white;
+    color: black;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .fundo3{
+      background-color: #171f38;
+      height: auto;
+  }
+  
+  .label3{
+      color: white;
+       display:inline-block;
+      
+  }
+
+.for1{
+    margin-top: 0%;
+}
+
+.Head2{
+    border: solid 1px white;
+    color: white;
+    padding: 10px, 10px, 10px, 10px;
+  }
+
+  .Cor2{
+    color: white;
+    font-size: 14px;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  
+  .Titulos{
+    text-align: center;
+  }
+
+  .BotaoPlano{
+   margin-left: 45%;
+   margin-top: 5%;
+  }
+
+  .DivFilterPlan{
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 3%;
+  }
+
+  .DivPlan{
+    display: inline-block;
+    margin-left: 7%;
+    margin-top: 3%;
+  }
+
+  .BottonPlan{
+    margin-left: 5%;
+    height: 2%;
+  }
+
+  .CursoPlan{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+
+  .DivFilterPlan{
+    display: inline-block;
+    margin-top: 2%;
+  }
+
+  .CorPlan{
+    color: white;
+  }
+
+  .Margin{
+    margin-left: 1%;
+  }
+
+  .NInput{
+    margin-left: 1%;
+    width: 5%;
+    text-align: center;
+  }
+
+  .Filterbotton{
+    margin-left: 1%;
+  }
+
+  
+
+  

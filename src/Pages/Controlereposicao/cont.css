@@ -1,0 +1,70 @@
+.formulario2{
+    margin-top: 2% ;
+    padding-bottom: 5.5%;
+    padding: 20px;
+    /* width: 1200px; */
+    /* height: 690px; */
+    height: auto;
+    width: auto;
+    border: 2px solid #ffffff ;
+    
+  }
+  
+   .fundo2{
+      background-color: #171f38;
+      height: 789px;
+  } 
+  
+  .label2{
+      color: white;
+       display:inline-block;
+      
+  }
+  
+.for{
+    margin-top: 7%;
+}
+
+.CaixaPreta{
+    display: none;
+    margin-top: 3%;
+}
+
+.BotaoClick{
+    width: 10%;
+}
+ 
+ .Check{
+  margin-left: 80%;
+  margin-top: 4%;
+  color: white;
+} 
+
+.White{
+    color: white;
+}
+
+.label4{
+    width: 50%;
+    height: 200%;
+    background: #0E1427 !important;
+}
+
+.divtextarea{
+    margin-top: 2%;
+}
+
+.label4{
+    color: white;
+}
+
+.check{
+    color: white;
+}
+
+.CheckBox{
+    margin-top:5%;
+    margin-left: 20%;
+}
+
+  
