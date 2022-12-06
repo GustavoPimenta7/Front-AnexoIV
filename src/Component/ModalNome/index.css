@@ -1,0 +1,20 @@
+.DivName{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.Nome{
+    text-align: center;
+    width: 50%;
+    height: 35px;
+    border: solid 2px black;
+}
+
+.BotoesName{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.NameCancelar{
+    margin-left: 2%;
+}

@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Table, Button, Form, FormLabel } from 'react-bootstrap'
-import { set } from 'react-hook-form';
 import Cabeca_voltar from '../../Component/Header_voltar';
 import api from '../../Service/api';
 import './plan.css'
+import PDF3 from './pdf2';
+import ModalAtividade from '../../Component/ModalActivity'
 
 
-function Index() {
-
-  function Print() {
-    window.print();
-  }
-
+ function Index() {
 
   const [Spares, setSpare] = useState([]);
   useEffect(() => {
@@ -22,31 +18,80 @@ function Index() {
     getSpare();
   })
 
-  const [Course, setCurso] = useState('');
+  let [Course, setCurso] = useState('');
   const [Number_Spare, setNumber] = useState('');
+
+  const Name_User = sessionStorage.getItem('Login')
+
   async function Filter() {
+    
 
     const dataNumber = {
       Course, Number_Spare
     }
 
-    const dataCurso={
+    const dataCurso = {
       Course
     }
 
-    if(Number_Spare == ''){
-      const {data} = await api.post('/spareget',dataCurso)
-      setSpare(data);
 
+    if(sessionStorage.getItem('Login') != 'Admin'){
+      Course = sessionStorage.getItem('Curso')
+      const dataNumberCord = {
+        Course, Number_Spare
+      }
+      console.log(Course)
+     
+      if(Number_Spare == '' || Number_Spare == 0){
+        Course = sessionStorage.getItem('Curso')
+        const dataCoord = {
+          Course
+        }
+        const { data } = await api.post('/spareget', dataCoord)
+        if(data == ''){
+          alert('Não há dados de reposição!')
+        }else{
+          setSpare(data)
+        }
+
+      }else{
+        const {data} = await api.post('/plano', dataNumberCord)
+        if(data == ''){
+          alert('Essa reposição não existe!')
+
+          }else{
+            setSpare(data)
+          }
+      }
+      
     }else{
-    const {data} = await api.post('/plano', dataNumber);
-    setSpare(data);
-    console.log(data);
+        if(Number_Spare == '' || Number_Spare == 0){
+          const { data } = await api.post('/spareget', dataCurso)
+          if(data == ''){
+            alert('Não há reposições feitas!')
+          }else{
+            setSpare(data)
+          }
+        } else{
+          const {data} = await api.post('/plano', dataNumber)
+            if(data == ''){
+              alert('Essa reposição não existe!')
+              
+              }else{
+                setSpare(data)
+              }
+            }
+        }
 
-    }
 
   }
 
+
+  function Private(){
+    if(sessionStorage.getItem('Login') != 'Admin'){
+      alert('Você não tem acesso a esta opção!')
+    }
+  }
 
   const [Course2, setCourse2] = useState([]); // Variável para setar os cursos cadastrados no banco de dados
   useEffect(() => {
@@ -58,21 +103,38 @@ function Index() {
     getCourse2();
   }, []);
 
+  const [ModalUp2, setModalUp2] = useState(false)
+  const [ActivityItem, setActivityItem] = useState('')
 
+  function ShowModal(spare){
+    if(sessionStorage.getItem('Login') == 'Admin'){
+      alert('O administrador não pode alterar dados de reposição!')
+    }else{
+      setModalUp2(true)
+      setActivityItem(spare)
+    }
+  }
+
+  const NomeCurso = sessionStorage.getItem('Curso')
 
   return (
     <div className='fundo3'>
       <Cabeca_voltar />
 
+      { ModalUp2 && <ModalAtividade isOpen={ModalUp2} dataActivity={ActivityItem} />}
+
       <Container>
+
+      <p className='NomeCursoPlano'>{NomeCurso}</p>
+
         <div className='DivFilterPlan'>
-          <Form.Label className='CorPlan'>Filtre seu curso:</Form.Label>
+
+          <Form.Label className='CorPlan CursoPlan'>Filtre seu curso:</Form.Label>
         </div>
 
-
-
         <div className='DivFilterPlan'>
-          <Form.Select className='CursoPlan' value={Course} onChange={e => setCurso(e.target.value)}>
+
+          <Form.Select className='CursoPlan' onClick={Private} value={Course} onChange={e => setCurso(e.target.value)}>
             <option>Selecione o curso</option>
             {
               Course2.map((curso) => (
@@ -82,7 +144,7 @@ function Index() {
           </Form.Select>
         </div>
 
-       
+
         <Form.Label className='CorPlan Margin'>N° Reposição (Opcional):</Form.Label>
         <input type='number' className='NInput' value={Number_Spare} onChange={e => setNumber(e.target.value)} />
         <Button className='Filterbotton' onClick={Filter}>Buscar</Button>
@@ -122,6 +184,7 @@ function Index() {
               <th className='Head2 Titulos'>Professor Da Reposição</th>
               <th className='Head2 Titulos'>Data Da Reposição</th>
               <th className='Head2 Titulos'>Horário Da Reposição</th>
+              <th className='Head2 Titulos'>Adicional Noturno</th>
             </tr>
           </thead>
           <tbody>
@@ -133,6 +196,8 @@ function Index() {
                   <td className='Head2'>{spare.Name_Spare}</td>
                   <td className='Head2'>{spare.Date_Spare}</td>
                   <td className='Head2'>{spare.Hour_Start} às {spare.Hour_End}</td>
+                  <td className='Head2'>{spare.Aditional}</td>
+
                 </tr>
               ))
             }
@@ -141,25 +206,26 @@ function Index() {
         </Table>
 
         <Table className='Cor2'>
-
           <thead className='Head2'>
             <th className='Head2'>Atividades Desenvolvidas</th>
-
           </thead>
-
           <tbody>
             {
               Spares.map((spare) => (
                 <tr>
                   <td className='Head2'>{spare.Activity}</td>
+                  <td className='Head2'><Button onClick={() => ShowModal(spare)}>Editar</Button></td>      
                 </tr>
               ))
             }
           </tbody>
         </Table>
-
-        <Button className='BotaoPlano' onClick={Print}>Imprimir</Button>
       </Container>
+
+      <div>
+        <Button className='BotaoPlano' onClick={e => PDF3(Spares)}>Gerar PDF</Button>
+      </div>
+
     </div>
   );
 }

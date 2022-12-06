@@ -1,0 +1,25 @@
+.TableCursos{
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    margin-top: 6%;
+}
+
+.TableCampos{
+    border: solid 2px white;
+    text-align: center;
+}
+
+.botaoCadastro{
+    display: none;
+}
+
+.SpaceCursoD{
+    margin-left: 3%;
+    background-color: red;
+    border: red;
+}
+
+.SpaceCursoD:hover{
+    background-color: red;
+}

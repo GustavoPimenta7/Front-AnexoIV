@@ -9,7 +9,7 @@
 
 .fundo{
     background-color: #171f38;
-    height: 950px;
+    min-height: 100vh;
 }
 
 .label{
@@ -17,13 +17,9 @@
      display:inline-block;
 }
 
-.for2{
-  margin-top: 0%;
-}
-
 .Cor{
   color: white;
-  font-size: 15px;
+  font-size: 10pt;
   margin-top: 5%;
   text-align: center;
 }
@@ -65,25 +61,32 @@
   padding-bottom: 1px;
 }
 
-
-.Acriar{
-  display: none;
-}
-
 .Curso{
-  width: 90%;
+  width: 100%;
   margin-left: 5%;
   margin-top: 2%;
 }
 
 .FilterCurso{
   color: white;
-  margin-left: 5%
+  margin-left: 10%
 }
 
 .DivFilter{
   display: inline-block;
-  margin-top: 2%;
+  margin-top: 3%;
+}
+
+.DivBusca{
+  display: inline-block;
+  margin-top: 3%;
+  margin-left: 2%;
+  width: 30%;
+}
+
+.DivReload{
+  display: inline-block;
+  margin-left: 1%;
 }
 
 .ButtonRe{
@@ -91,7 +94,67 @@
 }
 
 .BotaoImp{
-  margin-top: 5%;
+  margin-top: 6.8%;
+  text-align: center;
   margin-left: 45%;
+  margin-bottom: 1%;
 }
 
+.BotaoP2{
+  margin-left: 2%;
+  margin-top: 5.8%;
+}
+
+
+
+.Table{
+  margin-bottom: auto;
+}
+
+.TableCont{
+  margin-top: 4%;
+}
+
+.Teste{
+  display: none;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+}
+
+.HeadS{
+  border: solid 1px white;
+  color: white;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Exclusao{
+  background-color: red;
+  border-color: red;
+}
+
+.Exclusao:hover{
+  background-color: red;
+  border-color: red;
+
+}
+
+.NomeCurso{
+  color: white;
+  text-align: center;
+  font-size: 25pt;
+  font-weight: bold;
+}
+
+.BotaoApagar{
+  background-color: red;
+  margin-left: 3%;
+  border: solid 1px red;
+}
+
+.BotaoApagar:hover{
+ background-color: red;
+ border: solid 1px red;
+}

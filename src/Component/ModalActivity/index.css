@@ -1,0 +1,67 @@
+.Atividade{
+    text-align: center;
+}
+
+.SelectUp{
+    width: 100%;
+}
+
+.DivSelectCurso{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.Margin{
+    margin-left: 3%;
+}
+
+.ContAtividade{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.TableAtivi{
+    text-align: center;
+    border: solid 2px black;
+}
+
+.Tamanho{
+    width: 30%;
+    text-align: center;
+}
+
+.Tamanho2{
+    width: 10%;
+    text-align: center;
+    margin-left: 3%;
+}
+
+.DivArea{
+    text-align: center;
+    margin-top: 3%;
+}
+
+TextArea{
+    width: 50%;
+    height: 100px;
+}
+
+.Botões{
+   margin-left: 40%;
+   margin-top: 2%;
+}
+
+.SpaceB{
+    margin-left: 2%;
+}
+
+.TextAreaAtivi{
+    width: 60%;
+    height: 120px;
+    border: solid 1.5px black;
+}
+
+.DivtextareActivi{
+    text-align: center;
+    margin-top: 10%;
+}

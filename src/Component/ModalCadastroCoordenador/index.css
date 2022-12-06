@@ -1,0 +1,34 @@
+
+.ContCadastro{
+    text-align: center;
+    margin-top: 3%;
+}
+
+h1{
+    text-align: center;
+}
+
+.InputsCoordenador{
+    width: 25%;
+    height: 35px;
+    text-align: center;
+    border: solid 1px black;
+}
+
+.InputCursoSelect{
+    width: 30%;
+    margin-left: 35%;
+    border: solid 1px black;
+}
+
+p{
+    margin-top: 1%
+}
+
+.botoesCoordenador{
+    margin-top: 2%;
+}
+
+.CoordenadorCancelar{
+    margin-left: 3%;
+}

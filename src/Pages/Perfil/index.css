@@ -1,0 +1,38 @@
+.corPerfil{
+    color: white
+}
+
+.perfil{
+    text-align: center;
+    background-color: #171f38;
+    background-size: cover;
+    min-height: 100vh;
+    margin-bottom: auto;
+}
+
+.IMG{
+    width: 35%;
+    height: auto;
+    background-color: white;
+    display: inline-block;
+    margin-top: 2%;
+    border-radius: 50px;
+    border: solid 2px black;
+}
+
+.ImgPerfil{
+   width: 60%;
+   height: 180px;
+}
+
+.InformacaoPerfil{
+    width: 35%;
+    text-align: left;
+    margin-top: 1%;
+}
+
+
+.PerfilDivEmail{
+    margin-top: 5%;
+}
+

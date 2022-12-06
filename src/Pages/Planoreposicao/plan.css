@@ -8,7 +8,6 @@
     
   }
 
-
   .LabelRepo{
     color:white;
   }
@@ -22,8 +21,7 @@
   
   .fundo3{
       background-color: #171f38;
-      height: auto;
-  }
+      min-height: 100vh;  }
   
   .label3{
       color: white;
@@ -43,8 +41,8 @@
 
   .Cor2{
     color: white;
-    font-size: 14px;
-    margin-top: 5%;
+    font-size: 12pt;
+    margin-top: 6%;
     text-align: center;
   }
 
@@ -56,6 +54,7 @@
   .BotaoPlano{
    margin-left: 45%;
    margin-top: 5%;
+   margin-bottom: 1%;
   }
 
   .DivFilterPlan{
@@ -70,13 +69,8 @@
     margin-top: 3%;
   }
 
-  .BottonPlan{
-    margin-left: 5%;
-    height: 2%;
-  }
-
   .CursoPlan{
-    width: 90%;
+    width: 100%;
     margin-left: 5%;
     margin-top: 2%;
   }
@@ -91,7 +85,7 @@
   }
 
   .Margin{
-    margin-left: 1%;
+    margin-left: 2%;
   }
 
   .NInput{
@@ -104,6 +98,11 @@
     margin-left: 1%;
   }
 
-  
+  .NomeCursoPlano{
+    color: white;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+  }
 
   

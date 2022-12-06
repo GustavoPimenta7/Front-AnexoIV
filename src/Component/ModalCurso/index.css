@@ -1,0 +1,30 @@
+.h1{
+    text-align: center;
+}
+
+.Cont{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.Cont2{
+    padding-top: 1%;
+}
+
+.BotaoCurso{
+    margin-top: 4%;
+}
+
+.SpaceCurso{
+    margin-left: 2%;
+}
+
+.TInputs{
+    height:40px;
+    width: 50%;
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold
+}

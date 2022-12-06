@@ -1,0 +1,64 @@
+
+.ColorTeste{
+    background-color: #171f38;
+    min-height: 100vh;
+}
+
+
+.DivEmailLabel{
+   margin-left: 35%;
+    width: 30%;
+}
+
+.InputEmail{
+    text-align: center;
+    width: 80%;
+    height: 35px;
+    margin-left: 10%;
+}
+
+.InputSenha{
+    text-align: center;
+    width: 80%;
+    height: 35px;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.BotoesDeleteConta{
+    margin-top: 1%;
+    text-align: center;
+}
+
+.BotaoDeleteCancelar{
+    margin-left: 3%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+.BotaoDeleteConfirm{
+    background-color: red;
+    border: red;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 25%;
+}
+
+.BotaoDeleteConfirm:hover{
+    background-color: red;
+}
+
+
+.TableLetra{
+    color: white;
+    border: solid 2px white;
+    text-align: center;
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.CamposTabela{
+    border: solid 2px white;
+}
+

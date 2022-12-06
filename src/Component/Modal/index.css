@@ -1,0 +1,125 @@
+.Titulo{
+    text-align: center;
+}
+
+.SelectCurso{
+    width: 110%;
+}
+
+.Display{
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.Display2{
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.DivNumero{
+    margin-left: 3%;
+}
+
+.Botom{
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+.BotomBuscar{
+    margin-left: 2%;
+}
+
+.FormNumber{
+    width: 20%;
+    text-align: center;
+    margin-left: 2%
+}
+
+.Center{
+    align-items: center;
+    margin-top: 4%;
+}
+
+.cont2{
+    margin-top: 5%;
+}
+
+.Motivo{
+    margin-top: 4%;
+}
+
+
+
+.TabelaModal{
+    border: solid 2px black;
+    margin-top: 4%;
+}
+
+.Campos{
+    border: solid 1px black;
+}
+
+.inputs{
+    border: solid 1px black;
+    text-align: center;
+}
+
+.PCampos{
+    font-size: 17pt;
+    font: bold
+}
+
+.DivP{
+    display: none;
+}
+
+.Cancelar{
+    margin-top: 3%;
+    margin-left: 45% ;
+}
+
+.afastainput{
+    margin-left: 1%;
+}
+
+.bordas{
+    border: solid 1.5px black
+}
+
+.Negrito{
+    font-weight: bold;
+}
+
+.CentralizarReposicao{
+    text-align: center;
+    height: 40px;
+}
+
+.tamanhosinput{
+    height: 40px;
+}
+
+.Especifique{
+    display: none;
+    text-align: center;
+}
+
+.reason{
+    display: inline-block;
+    margin-right: 33%;
+    width: 10%;
+    margin-top: 1%;
+}
+
+.Type{
+    display: inline-block;
+    margin-left: 3%;
+    width: 20%;
+    margin-top: 1%;
+}
+
+.DivAlterar{
+    margin-top: 2%;
+}

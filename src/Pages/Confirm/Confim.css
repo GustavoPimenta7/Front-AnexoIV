@@ -1,0 +1,40 @@
+.Container3{
+    background-color: #171f38;
+    margin-left: 30%;
+    margin-top: 7%;
+    width: 40%;
+    border-radius: 4%;
+}
+
+.LabelP{
+    color: white;
+    padding-left: 10%;
+    font-size: 17pt;
+}
+
+.DivBotoesConfirm{
+    text-align: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.Botao01{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 17pt;
+    width: 17%;
+}
+
+.Botao02{
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 17pt;
+    width: 17%;
+}
+
+.ImgConfirm{
+    width: 90% !important;
+    padding-left: 12%;
+}

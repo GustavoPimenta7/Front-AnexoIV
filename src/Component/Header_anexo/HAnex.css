@@ -2,6 +2,52 @@
     text-align: center;
 }
 
-.me-auto{
-    margin: 0 280px;
+.CenterHeader{
+   margin-left: 35%;
+}
+
+.me-autoo{
+    margin: 0 800px;
 } 
+
+.Cursos{
+    margin-left: 20%;
+}
+
+.Saida{
+    margin-left: 20%;
+}
+
+.DropDow{
+    margin-left: 30%;
+    width: 20%;
+}
+
+.SpaceImage{
+    margin-left: 4%;
+}
+
+
+.BotaoEnce{
+    background-color: white;
+    color: rgb(68, 68, 198);
+    border: white;
+    margin-left: 10%;
+}
+
+.BotaoEnce2{
+    background-color: white;
+    color: rgb(68, 68, 198);
+    border: white;
+    margin-left: 10%;
+}
+
+.BotaoEnce:hover{
+    background-color: white;
+    color: rgb(68, 68, 198);
+}
+
+.BotaoEnce2:hover{
+    background-color: white;
+    color: rgb(68, 68, 198);
+}

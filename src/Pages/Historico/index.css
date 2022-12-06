@@ -1,0 +1,104 @@
+
+.CorHistorico{
+    color: white;
+}
+
+.CenterHistorico{
+    text-align: center;
+}
+
+.TableHistorico{
+    margin-top: 3%;
+    min-height: 100vh;
+    margin-bottom: auto;
+}
+
+.FiltercursoLabel{
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.CursoFilter{
+    display: inline-block;
+    margin-left: 2%;
+    width: 14%;
+}
+
+.MesFilter{
+    display: inline-block;
+    width: 10%;
+}
+
+.CursoLabel{
+    display: inline-block;
+}
+
+.YearFilter{
+    display: inline-block;
+    width: 15%;
+}
+
+.LabelMes{
+    margin-left: 17%;
+}
+
+.SelecaoHistorico{
+    width: 150%;
+}
+
+.SelecaoMes{
+    width: 30%;
+    text-align: center;
+    margin-right: 45%;
+    margin-left: 7%;
+}
+
+.Historico{
+    background-color: #171f38;
+    min-height: 100vh;
+}
+
+.SelecaoYear{
+    width: 35%;
+    text-align: center;
+    margin-right: 35%;
+    margin-left: 7%;
+}
+
+.BotaoHistorico{
+    display: inline-block;
+    margin-left: 3%;
+}
+
+.TabelaHistory{
+    border: solid 2px white;
+    text-align: center;
+    color: white;
+}
+
+.TableCamposHistorico{
+    border: solid 2px white;
+    text-align: center;
+}
+
+.TabelaHistory2{
+    border: solid 2px white;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+
+.TabelaHistory3{
+    border: solid 2px white;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+
+.TabelaHistory4{
+    border: solid 2px white;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: auto;
+}

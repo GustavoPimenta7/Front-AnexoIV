@@ -1,0 +1,18 @@
+.CenterPassword{
+    text-align: center;
+}
+
+.inputsModalSenha{
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    border: solid 2px black;
+}
+
+.botoesSenha{
+    margin-top: 2%;
+}
+
+.botaoSenhaCancelar{
+    margin-left: 2%;
+}
