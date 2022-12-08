@@ -31,12 +31,16 @@ function Index(){
 
     const [modalnome, setModalNome] = useState(false)
     const [NomeItem, setNomeItem] = useState('')
-    const[modalsenha, setmodalsenha] = useState(false)
+    const [modalsenha, setmodalsenha] = useState(false)
     const [SenhaItem, setSenhaItem] = useState('')
 
     function Name(user){
+      if(sessionStorage.getItem('Login') == 'Admin'){
+        alert('O administrador não pode alterar nome!')
+      }else{
         setModalNome(true)
         setNomeItem(user)
+      }
     }
 
     function Password(user){
